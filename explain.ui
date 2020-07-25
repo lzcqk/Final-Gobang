@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>explain</class>
+ <widget class="QWidget" name="explain">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>661</width>
+    <height>384</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>游戏说明</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/magic/favicon.ico</normaloff>:/magic/favicon.ico</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>游戏介绍：                                        
+1）支持15 X 15 的棋盘规格（支持黑白两种棋子）。
+2）支持人与人的对弈（双人博弈），支持人与电脑的对弈（人机对战）。
+3）支持先手后手的设置。
+4）支持悔棋和撤销悔棋操作（不限步数）。
+5）支持保存棋谱和载入棋谱。   
+6）支持重新开始游戏。
+特殊说明：
+1. 玩家可以在游戏过程中改变对战模式，但不可以改变先手状态。  
+2. 若在游戏中途将游戏模式从&quot;双人博弈&quot;改为&quot;人机对战&quot;，将由电脑替代黑棋玩家下棋，反之则由另一名玩家替代电脑持黑子下棋。
+3. 若要改变先手状态，请先按下先手状态按键，后点击重新开始。
+4. 游戏过程中支持保存当前棋局，将以图片形式存在。
+5. 若读入旧棋盘，当前棋局将被旧棋盘覆盖。（特别的：玩家可以在原来保存的旧棋盘上相应位置画棋子，保存以后。也可以被读取，但切记不要作弊哦）</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
